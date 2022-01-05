@@ -5,11 +5,11 @@
 class Doctor : public Person {
 private:
 	int doc_id, dep_id, doc_shift_start, doc_shift_end;
-
+	string name;
 public:
 	Doctor();
 
-	Doctor(int doc_id, int dep_id, int doc_shift_start, int doc_shift_end);
+	Doctor(int doc_id, int dep_id, int doc_shift_start, int doc_shift_end, string name);
 	// Copy constructor
 	Doctor(const Doctor &doc1);
 	
@@ -19,6 +19,7 @@ public:
 	int get_dep_id() const;
 	int get_shift_start()const;
 	int get_shift_end()const;
+	string get_doc_name()const;
 };
 
 #endif

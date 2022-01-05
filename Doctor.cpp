@@ -6,12 +6,13 @@ Doctor::Doctor()
 {
 }
 
-Doctor::Doctor(int doc_id, int dep_id, int doc_shift_start, int doc_shift_end)
+Doctor::Doctor(int doc_id, int dep_id, int doc_shift_start, int doc_shift_end, string name)
 {
 	this->doc_id = doc_id;
 	this->dep_id = dep_id;
 	this->doc_shift_start = doc_shift_start;
 	this->doc_shift_end = doc_shift_end;
+	this->name = name;
 }
 
 Doctor::Doctor(const Doctor &doc){
@@ -44,4 +45,8 @@ int Doctor::get_shift_start()const {
 
 int Doctor::get_shift_end()const {
 	return doc_shift_end;
+}
+
+string Doctor::get_doc_name()const{
+	return name;
 }

@@ -1,4 +1,4 @@
-1,0,11,18,Burak Guler,
+1,0,11,13,Burak Guler,
 2,0,10,13,Fadime Ozer,$
 3,1,13,16,Zeynep Kosea,
 4,1,16,20,Melike Korkmaz,&

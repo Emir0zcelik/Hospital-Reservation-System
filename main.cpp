@@ -134,7 +134,7 @@ int main() {
 		int menuIn;
 		cout<< endl << "                           |Main Menu|                           " << endl << endl;
 		cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
-		cout << "1-Make a new appointment" << endl << "2-Show previous appointments" << endl;
+		cout << "1-Make a new appointment" << endl << "2-Show previous appointments" << endl << "3-Exit to hospital" << endl;
 		cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
 		cout << "Choice: ";
 		cin >> menuIn;
@@ -284,6 +284,12 @@ int main() {
 			int app_choice;
 			
 			PrintAppointment();
+		}
+		
+		else if(menuIn == 3)
+		{
+			cout << "Bye!!" << endl;
+			return 0;
 		}
 		
 		else
